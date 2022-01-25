@@ -21,6 +21,8 @@ def site_check (link):
 
     return welcome_text
 
+    browser.quit()
+
 class TestRgst(unittest.TestCase):
     def test_rgst1(self):
         self.assertEqual(site_check("http://suninjuly.github.io/registration1.html"), 
@@ -34,4 +36,3 @@ class TestRgst(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-    browser.quit()
